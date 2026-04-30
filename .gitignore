@@ -1,0 +1,80 @@
+# =========================
+# OS / SYSTEM FILES
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# LOGS
+# =========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# ENV
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# NODE / FRONTEND
+# =========================
+node_modules/
+dist/
+build/
+.cache/
+.next/
+out/
+
+# =========================
+# WORDPRESS CORE (ignore)
+# =========================
+wp-admin/
+wp-includes/
+
+# =========================
+# WORDPRESS CONTENT
+# =========================
+
+# Uploads (media files)
+wp-content/uploads/
+
+# Cache & temp
+wp-content/cache/
+wp-content/upgrade/
+
+# Backups
+wp-content/backups/
+wp-content/backup-db/
+
+# Logs
+wp-content/debug.log
+
+# =========================
+# THEMES & PLUGINS
+# =========================
+
+# Ignore all themes
+wp-content/themes/*
+!wp-content/themes/jtcreatives/
+
+# Ignore all plugins except custom ones
+wp-content/plugins/*
+!wp-content/plugins/jt-custom-plugin/
+
+# =========================
+# EDITOR FILES
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# MISC
+# =========================
+*.zip
+*.tar.gz
+*.rar
