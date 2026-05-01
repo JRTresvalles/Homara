@@ -1,4 +1,18 @@
 @use './base/base.scss';
+@use './base/fonts.scss';
+
 @use './variable/variable.scss';
 @use './layout/layout.scss';
 @use './components/header.scss';
+@use './components/button.scss';
+@use './components/hero.scss';
+@use './components/offer.scss';
+@use './components/explore.scss';
+@use './components/feature.scss';
+@use './components/solution.scss';
+@use './components/team.scss';
+@use './components/reviews.scss';
+@use './components/faqs.scss';
+@use './components/footer.scss';
+
+@use './components/breakpoints.scss';

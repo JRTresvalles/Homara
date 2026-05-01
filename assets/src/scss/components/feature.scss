@@ -1,0 +1,52 @@
+.feature__card{
+    display: grid;
+    gap: 1rem;
+    border-radius: 12px;
+    background-color: #F3F3F3;
+}
+
+.feature__container .section__round-pill{
+    margin: 0;
+}
+
+
+.feature__content {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding-block: 2rem;
+}
+
+.feature__card-image {
+    position: relative;
+    border-radius: 16px;
+    aspect-ratio: 16 / 14;
+    overflow: hidden;
+}
+
+.feature__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.feature__location-text {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    padding: 8px 12px;
+    border-radius: 66px;
+}
+
+.feature__card-wrapper{
+    display: flex;
+    gap: 1rem;
+}
+
+.feature__card-icons{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}

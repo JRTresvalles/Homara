@@ -1,0 +1,23 @@
+.reviews__data-right .section__round-pill{
+    margin: 0;
+}
+
+
+.reviews__card{
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #F3F3F3;
+    border: 1px solid #C7C7C7;
+}
+
+.reviews__card-data{
+    display: grid;
+    gap: var(--mb-0-75);
+    margin-bottom: var(--mb-1);
+}
+
+.reviews__card-image{
+    display: flex;
+    align-items: center;
+    gap: var(--mb-1);
+}

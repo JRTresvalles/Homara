@@ -1,0 +1,72 @@
+
+.our__teams-content {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.our__teams-marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.our__teams-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: marqueeScroll 25s linear infinite;
+  will-change: transform;
+}
+
+.our__teams-marquee:hover .our__teams-track {
+  animation-play-state: paused;
+}
+
+.our__teams-card {
+  flex: 0 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.our__teams-card:hover {
+  transform: translateY(-6px);
+}
+
+.our__teams-card-image {
+   width: 280px;         
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.our__teams-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      
+  object-position: center; 
+}
+
+/* text */
+.our__teams-name {
+  font-size: var(--h3-font-size);
+  margin: 0;
+  font-weight: 600;
+}
+
+.our__teams-role {
+  font-size: var(--normal-font-size);
+  color: #777;
+  margin-top: 4px;
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
