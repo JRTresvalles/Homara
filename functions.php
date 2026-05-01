@@ -73,4 +73,7 @@ function homara_register_menus() {
         'footer_menu'  => __('Footer Menu', 'homara'),
     ]);
 }
-add_action('after_setup_theme', 'homara_register_menus');
+add_action('after_setup_theme', 'homara_register_menus');   
+
+
+require_once get_template_directory() . '/inc/button.php';

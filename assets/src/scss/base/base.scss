@@ -14,8 +14,8 @@ html {
 
 body {
     font-family: var(--font-body);
-    background: var(--bg-dark);
-    color: var(--text-primary);
+    background: #fff;
+    color: var(--primary);
     line-height: 1.6;
 }
 
@@ -25,7 +25,7 @@ h3,
 h4 {
     font-family: var(--font-heading);
     font-weight: var(--font-medium);
-    color: #fff;
+    color: var(--primary);
 }
 
 ul {
