@@ -1,0 +1,56 @@
+.cursor-follower {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    background: rgb(5, 5, 5);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition:
+        width 0.15s ease,
+        height 0.15s ease,
+        background 0.15s ease,
+        border 0.15s ease,
+        border-radius 0.15s ease,
+        padding 0.15s ease;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursor-follower.active {
+    height: 38px;
+    padding: 0 16px;
+    background: rgba(5, 5, 5, 0.12);
+    border: 1px solid rgba(5, 5, 5, 0.35);
+    backdrop-filter: blur(10px);
+    border-radius: 999px;
+    width: max-content;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursor-follower::after {
+    content: attr(data-text);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transform: translateY(2px);
+    transition: opacity 0.12s ease, transform 0.12s ease;
+    white-space: nowrap;
+}
+
+.cursor-follower.active::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card {
+    cursor: none;
+}

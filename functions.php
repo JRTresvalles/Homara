@@ -32,6 +32,8 @@ function homara_theme_setup() {
         'flex-height' => true,
         'flex-width'  => true,
     ]);
+    add_theme_support('editor-styles');
+    add_theme_support('wp-block-styles');
 }
 add_action('after_setup_theme', 'homara_theme_setup');
 

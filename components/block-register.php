@@ -5,53 +5,81 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 /* =========================
    HOMARA BLOCK LOADER
 
-   This file automatically registers all theme components
-   as Gutenberg blocks (when ACF Pro is active).
+   Automatically registers theme components as Gutenberg blocks
+   using Advanced Custom Fields (ACF) when block API is available.
 
-   STRUCTURE:
-   /components/{block}/block.php
-   /components/{block}/template.php
+   -------------------------
+   STRUCTURE
+   -------------------------
+   /components/{block}/{block}.php   → block configuration
+   /components/{block}/template.php   → block render template
 
-   FLOW:
-   acf/init → scan components → load config → register block → render template
+   -------------------------
+   FLOW
+   -------------------------
+   acf/init → load components → read config → register ACF block → render template
 
-   REQUIREMENTS:
-   - ACF Pro must be active (acf_register_block_type exists)
-   - Each component must have a valid block config file
+   -------------------------
+   REQUIREMENTS
+   -------------------------
+   - ACF Pro
+   - Each component must return a valid block configuration array
+     including at minimum: name, title, and render_template support
 
-   NOTE:
-   In ACF Free mode, this file runs but does NOT register blocks.
+   -------------------------
+   BEHAVIOR NOTES
+   -------------------------
+   - If ACF block API is not available (ACF Free),
+     this loader safely exits without registering blocks.
+   - No errors are thrown in production unless WP_DEBUG is enabled.
+   - In debug mode, missing or invalid configs are logged.
+
 ========================= */
 
-/**
- * Block helper
- */
+/* =========================
+   HOMARA BLOCK LOADER
+========================= */
+
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+
 function homara_register_acf_block( $args, $path ) {
 
-    if ( ! class_exists( 'HMR_ACF_Block' ) ) return;
-    if ( empty($args) || ! is_array($args) ) return;
+    if ( empty( $args ) || ! is_array( $args ) ) {
+        return;
+    }
 
     $defaults = array(
-        'category' => 'design',
-        'icon'     => 'block-default',
-        'supports' => array(
+        'category'        => 'design',
+        'icon'            => 'block-default',
+        'render_template' => $path . '/template.php',
+        'supports'        => array(
             'customClassName' => true,
             'anchor'          => true,
         ),
-        'render_template' => $path . '/template.php',
     );
 
-    return new HMR_ACF_Block( array_merge( $defaults, $args ), $path );
+    $config = array_merge( $defaults, $args );
+  
+    if ( function_exists( 'acf_register_block_type' ) ) {
+        acf_register_block_type( $config );
+    }
 }
 
-/**
- * Load all components automatically
- */
 function homara_register_all_blocks() {
 
-    if ( ! function_exists('acf_register_block_type') ) return;
+    if ( ! function_exists( 'acf_register_block_type' ) ) {
+        if ( defined('WP_DEBUG') && WP_DEBUG ) {
+            error_log('ACF block system not available (acf_register_block_type missing)');
+        }
+        return;
+    }
 
     $base_path = HMR_THEME_DIR . '/components';
+
+    if ( ! is_dir( $base_path ) ) {
+        return;
+    }
 
     $components = array(
         'hero',
@@ -66,14 +94,29 @@ function homara_register_all_blocks() {
     foreach ( $components as $component ) {
 
         $path = $base_path . '/' . $component;
-        $config_file = $path . '/block.php';
+        $config_file = $path . '/' . $component . '.php';
 
-        if ( file_exists( $config_file ) ) {
-
-            $args = include $config_file;
-
-            homara_register_acf_block( $args, $path );
+        if ( ! file_exists( $config_file ) ) {
+            if ( defined('WP_DEBUG') && WP_DEBUG ) {
+                error_log("Missing block config: {$config_file}");
+            }
+            continue;
         }
+
+        $args = include $config_file;
+
+        if ( ! is_array( $args ) ) {
+            if ( defined('WP_DEBUG') && WP_DEBUG ) {
+                error_log("Invalid block config: {$config_file}");
+            }
+            continue;
+        }
+
+        if ( defined('WP_DEBUG') && WP_DEBUG ) {
+            error_log("Registering block: {$component}");
+        }
+
+        homara_register_acf_block( $args, $path );
     }
 }
 

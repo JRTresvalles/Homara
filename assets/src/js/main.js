@@ -64,12 +64,12 @@ function initCursorFollower() {
 
     animate();
 
-    const targets = document.querySelectorAll(".card");
+    const targets = document.querySelectorAll("[data-cursor-text]");
 
     targets.forEach((el) => {
         el.addEventListener("mouseenter", () => {
             cursor.classList.add("active");
-            cursor.dataset.text = "View Project";
+            cursor.dataset.text = el.dataset.cursorText || "";
         });
 
         el.addEventListener("mouseleave", () => {
