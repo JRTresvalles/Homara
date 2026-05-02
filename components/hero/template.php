@@ -11,6 +11,7 @@
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 $block_name = 'hero';
+
 /**
  * =========================
  * PREVIEW STATE

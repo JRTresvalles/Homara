@@ -1,32 +1,74 @@
 /* =========================
    GRID WRAPPER
 ========================= */
-.offer__content-cards{
-    margin-top: 4rem;
+.offer__content-cards {
+  margin-top: 4rem;
+  background-color: var(--secondary);
+  z-index: 4;
+  position: relative;
 }
 
-.offer__container .section__round-pill{
-    margin: 0;
+.offer__container .section__round-pill {
+  margin: 0;
 }
 
-.offer__cards {
-  display: grid;
-  grid-template-columns: 1fr 1.8fr;
-  align-items: center;
+.offer__container .section__header {
+  height: min-content;
+  padding: 0;
+  position: sticky;
+  top: 150px;
+  overflow: visible;
+}
+
+.offer__card-wrapper {
   gap: 24px;
+  position: sticky;
+  top: 360px;
+  width: 100%;
+  height: auto;
+  z-index: 1;
 }
+
+.offer__left {
+  position: relative;
+}
+
+.offer__card-data{
+  position: sticky;
+  top: 340px;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.offer__card-wrapper:nth-child(1) {
+ top: 340px;
+  z-index: 1;
+}
+
+.offer__card-wrapper:nth-child(2) {
+ top: 360px;
+  z-index: 1;
+}
+
+.offer__card-wrapper:nth-child(3) {
+  top: 380px;
+  z-index: 1;
+}
+
+.offer__card-wrapper:nth-child(4) {
+  top: 400px;
+  z-index: 1;
+}
+
+
 
 /* =========================
    TEXT DATA BLOCK
 ========================= */
-.offer__card-data {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
 
 .offer__title {
-  font-size: var(--h2-font-size);
+  font-size: var(--h3-font-size);
   font-weight: 500;
   margin: 0;
 }
@@ -36,9 +78,9 @@
   opacity: 0.8;
 }
 
-.offer__corner-container{
-    display: flex;
-    align-items: flex-end;
+.offer__corner-container {
+  display: flex;
+  align-items: flex-end;
 }
 
 /* =========================
@@ -82,7 +124,7 @@
   display: flex;
   position: relative;
   right: -1px;
-bottom: -3px;
+  bottom: -3px;
 }
 
 .offer__corner-shape--top svg {

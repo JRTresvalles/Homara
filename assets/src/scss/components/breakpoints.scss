@@ -70,6 +70,10 @@
         order: -1;
     }
 
+    .offer__content-cards{
+        grid-template-columns: 1fr 1.8fr;
+    }
+
 }
 
 /* For large devices */

@@ -102,4 +102,4 @@ function homara_customize_register($wp_customize) {
 add_action('customize_register', 'homara_customize_register');
 
 
-require_once get_template_directory() . '/inc/button.php';
+require_once HMR_THEME_DIR . '/inc/button.php';
