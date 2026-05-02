@@ -103,3 +103,30 @@ add_action('customize_register', 'homara_customize_register');
 
 
 require_once HMR_THEME_DIR . '/inc/button.php';
+
+
+/* =========================
+   HOMARA COMPONENT SYSTEM
+   (Future Self Documentation)
+
+   This line loads the component-based architecture for the theme.
+
+   FLOW:
+   functions.php → block-register.php → components → templates
+
+   IMPORTANT:
+
+   - This system ONLY registers Gutenberg blocks if ACF Pro is active.
+   - ACF Free will NOT show blocks in the editor (only page fields work).
+   - Each component inside /components/ is auto-registered as a block.
+
+   DEBUG CHECKLIST:
+   - Ensure this file is included in functions.php
+   - Ensure block-register.php is loaded
+   - Ensure /components/* folders exist
+   - Ensure ACF Pro is active for Gutenberg block support
+
+   WARNING:
+   Removing this file disables all component-based blocks.
+========================= */
+require_once HMR_THEME_DIR . '/components/block-register.php';
