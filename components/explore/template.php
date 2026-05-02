@@ -32,7 +32,7 @@ endif;
 			<div class="section__header">
 
 				<div class="section__round-pill">
-						<span>What We Offer</span>
+						<span>Why Choose Us</span>
 				</div>
 
 				<h2 class="section__title ">

@@ -40,13 +40,32 @@
     border-radius: 66px;
 }
 
+.feature__property-title{
+    font-size: var(--h3-font-size);
+    font-weight: 500;
+    margin: 0;
+}
+
 .feature__card-wrapper{
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    gap: .5rem;
 }
 
 .feature__card-icons{
     display: flex;
     gap: 0.5rem;
-    margin-top: 0.5rem;
+    margin: .5rem 0 1rem;
+}
+
+.feature__card-icon span{
+    font-size: var(--small-font-size);
+    color: var(--primary);
+}
+
+.feature__price{
+    font-family: var(--font-heading);
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    color: var(--primary);
 }

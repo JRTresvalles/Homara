@@ -70,10 +70,36 @@ function homara_register_menus() {
 
     register_nav_menus([
         'primary_menu' => __('Primary Menu', 'homara'),
-        'footer_menu'  => __('Footer Menu', 'homara'),
+         'footer-about'   => __('Footer About Menu', 'homara'),
+        'footer-company' => __('Footer Company Menu', 'homara'),
+        'footer-contact' => __('Footer Contact Menu', 'homara'),
     ]);
 }
 add_action('after_setup_theme', 'homara_register_menus');   
 
 
-require_once get_template_directory() . '/inc/button.php';
+/* =========================
+   Footer logo customization
+========================= */
+function homara_customize_register($wp_customize) {
+
+   $wp_customize->add_section('footer_settings', [
+      'title'    => 'Footer Settings',
+      'priority' => 160,
+   ]);
+
+   $wp_customize->add_setting('footer_logo', [
+      'sanitize_callback' => 'esc_url_raw',
+   ]);
+
+   $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'footer_logo', [
+      'label'    => 'Footer Logo',
+      'section'  => 'footer_settings',
+      'settings' => 'footer_logo',
+   ]));
+
+}
+add_action('customize_register', 'homara_customize_register');
+
+
+require_once HMR_THEME_DIR . '/inc/button.php';

@@ -17,6 +17,10 @@
   margin-bottom: 1rem;
 }
 
+.footer__logo img{
+  width: 150px;
+}
+
 .footer__data {
   grid-template-columns: repeat(2, max-content);
   gap: 2.5rem 3.5rem;
@@ -25,6 +29,7 @@
 .footer__title {
   font-size: var(--h3-font-size);
   margin-bottom: 1rem;
+  color: var(--secondary);
 }
 
 .footer__links {
@@ -32,14 +37,15 @@
   row-gap: 0.75rem;
 }
 
-.footer__link {
-  color: var(--secondary);
+.footer__links li a{
+  color: var(--text-muted);
   transition: color 0.4s;
 }
 
-.footer__link:hover {
+.footer__links li a:hover{
   color: var(--secondary);
 }
+
 
 .footer__group,
 .footer__social {
@@ -47,8 +53,9 @@
 }
 
 .footer__description{
-    font-size: var(--normal-font-size);
-    color: var(--secondary);
+    font-size: var(--small-font-size);
+    color: var(--text-muted);
+    max-width: 300px;
 }
 
 .footer__group {
@@ -75,6 +82,6 @@
 
 .footer__copy {
   font-size: var(--small-font-size);
-  color: var(--secondary);
+  color: var(--text-muted);
   text-align: center;
 }

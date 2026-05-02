@@ -70,6 +70,10 @@
         order: -1;
     }
 
+    .offer__content-cards{
+        grid-template-columns: 1fr 1.8fr;
+    }
+
 }
 
 /* For large devices */
@@ -100,7 +104,7 @@
     }
 
     .footer__group {
-        margin-top: 7rem;
+        margin-top: 2rem;
     }
 
     .footer__social {
