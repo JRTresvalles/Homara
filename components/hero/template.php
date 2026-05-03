@@ -11,6 +11,10 @@
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 $block_name = 'hero';
+$title = get_field('title') ? get_field('title') : 'FIND YOUR PERFECT<br>HOME TODAY';
+$description = get_field('description') ? get_field('description') : 'We provide tailored real estate solutions, guiding you through every step with personalized experiences.';
+$button = get_field('button');
+$image = get_field('image');
 
 /**
  * =========================
@@ -28,29 +32,50 @@ endif;
 ?>
 
 
-<section class="<?php echo esc_attr($block_name); ?>">
+<section class="<?php echo esc_attr($block_name); ?>" >
   <div class="<?php echo esc_attr($block_name . '__container'); ?>">
 
-    <div class="hero__image">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero_image.png" alt="Hero Image">
+    <div class="hero__image" data-cursor-text="Get Started">
+        <?php 
+        if( !empty( $image ) ): ?>
+            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+        <?php else: ?>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero_image.png" alt="Hero Image">
+        <?php endif; ?>
+
         <div class="hero__content">
 
           <div class="hero__data">
             <h1 class="hero__title">
-              FIND YOUR PERFECT<br>HOME TODAY
+              <?php echo $title; ?>
             </h1>
 
             <p class="hero__description">
-              We provide tailored real estate solutions, guiding you through every step with personalized experiences.
+              <?php echo esc_html($description); ?>
             </p>
           </div>
 
-          <a href="/" class="button button__white">
-            Explore Properties
-            <span class="button__arrow">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="currentColor;"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
-            </span>
-          </a>
+          <?php 
+          if( $button ): 
+              $button_url = $button['url'];
+              $button_title = $button['title'];
+              $button_target = $button['target'] ? $button['target'] : '_self';
+              ?>
+              <a href="<?php echo $button_url; ?>" target="<?php echo $button_target; ?>" class="button button__white">
+                <?php echo $button_title; ?>
+                <span class="button__arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="currentColor;"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
+                </span>
+              </a>
+
+          <?php else: ?>
+                <a href="/" class="button button__white">
+                  Explore Properties
+                  <span class="button__arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="currentColor;"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
+                  </span>
+                </a>
+          <?php endif; ?>
 
         </div>
         <div class="hero__corner-wrapper">
