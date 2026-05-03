@@ -1,6 +1,6 @@
 <?php
 /**
- * Hero Block Component
+ * Hero Component
  * 
  * @package Homara
  * 

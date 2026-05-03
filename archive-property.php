@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header(); ?>
 
-<main class="archive-project section">
+<main class="archive-project">
     
    <section class="feature section">
     <div class="feature__container container grid">

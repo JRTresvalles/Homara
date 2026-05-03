@@ -1,0 +1,13 @@
+.ContactPage .contact.section {
+    padding: 8rem 0 8rem;
+    background-image: url("../images/contact-us.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ContactPage .contact__title{
+    font-size: var(--h1-font-size);
+    color: var(--primary);
+    margin-bottom: var(--mb-1);
+}

@@ -182,4 +182,4 @@ require_once HMR_THEME_DIR . '/inc/button.php';
    WARNING:
    Removing this file disables all component-based blocks.
 ========================= */
-require_once HMR_THEME_DIR . '/components/block-register.php';
+// require_once HMR_THEME_DIR . '/components/block-register.php';

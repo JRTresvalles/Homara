@@ -27,7 +27,7 @@ endif;
 ?>
 
 
-<section class="<?php echo esc_attr($block_name); ?> section">
+<section class="<?php echo esc_attr($block_name); ?> section" id="solution">
     <div class="<?php echo esc_attr($block_name . '__container'); ?> container grid">
 		
 	<div class="solution__data-right">

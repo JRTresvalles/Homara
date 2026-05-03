@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 $block_name = 'hero';
 $title = get_field('title') ? get_field('title') : 'FIND YOUR PERFECT<br>HOME TODAY';
-$description = get_field('description') ? get_field('description') : 'We provide tailored real estate solutions, guiding you through every step with personalized experiences.';
+$description = get_field('description') ? get_field('description') : 'Discover properties that match your lifestyle. We guide you every step of the way with personalized support and expert insight.';
 $button = get_field('button');
 $image = get_field('image');
 
@@ -35,7 +35,7 @@ endif;
 <section class="<?php echo esc_attr($block_name); ?>" >
   <div class="<?php echo esc_attr($block_name . '__container'); ?>">
 
-    <div class="hero__image" data-cursor-text="Get Started">
+    <div class="hero__image" data-cursor-text="Get Started" href="#offer">
         <?php 
         if( !empty( $image ) ): ?>
             <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
@@ -69,7 +69,7 @@ endif;
               </a>
 
           <?php else: ?>
-                <a href="/" class="button button__white">
+                <a href="#feature" class="button button__white">
                   Explore Properties
                   <span class="button__arrow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="currentColor;"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
@@ -106,7 +106,7 @@ endif;
                 <p><strong>10+ Featured Agents</strong></p>
                 <div class="hero__stars">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/stars-icon.png" alt="Star Icon" class="hero__star">
-                  <span>5.0</span>
+                  <span>4.9</span>
                 </div>
               </div>
 
@@ -115,7 +115,7 @@ endif;
           </div>
 
         </div>
-    </div>
+      </div>
 
   </div>
 </section>
