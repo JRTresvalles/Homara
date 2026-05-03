@@ -7,6 +7,7 @@
 
 <?php 
     $post_id = get_the_ID();
+    $property_image = function_exists('get_field') ? get_field('property_image', $post_id) : null;
     $location = function_exists('get_field') ? get_field('location', $post_id) : '';
     $price    = function_exists('get_field') ? get_field('price', $post_id) : '';
     $beds     = function_exists('get_field') ? get_field('bed', $post_id) : '';
@@ -14,9 +15,11 @@
     $sqft     = function_exists('get_field') ? get_field('sqft', $post_id) : '';
     $type     = function_exists('get_field') ? get_field('type', $post_id) : '';
     $amenities = function_exists('get_field') ? get_field('amenities', $post_id) : '';
+    $highlight        = $property_image['property_highlight'] ?? null;
+    $highlight_second = $property_image['property_hightlight_second'] ?? null;
 ?>
 
-<section class="property__single section">
+<section class="property__single">
 
     <div class="property__single-container container">
 
@@ -29,8 +32,15 @@
 
             
             <div class="property__column grid">
-                <?php the_post_thumbnail('large'); ?>
-                <?php the_post_thumbnail('large'); ?>
+                <?php if ($highlight) : ?>
+                    <img src="<?php echo esc_url($highlight['url']); ?>" 
+                         alt="<?php echo esc_attr($highlight['alt']); ?>">
+                <?php endif; ?>
+
+                <?php if ($highlight_second) : ?>
+                    <img src="<?php echo esc_url($highlight_second['url']); ?>" 
+                         alt="<?php echo esc_attr($highlight_second['alt']); ?>">
+                <?php endif; ?>
             </div>
 
         </div>
@@ -98,34 +108,12 @@
                     </div>
 
 
-                    <div class="Property__map-container">
+                    <div class="property__map-container">
                         <h3>Location</h3>
-                    <?php
-                        $location = get_field('map_location');
-
-                        if ($location):
-                            $lat = $location['lat'];
-                            $lng = $location['lng'];
-                        ?>
-                        <div id="property-map" style="height:400px;"></div>
-
-                        <script>
-                        document.addEventListener("DOMContentLoaded", function () {
-
-                            const map = L.map('property-map').setView([<?php echo $lat; ?>, <?php echo $lng; ?>], 15);
-
-                            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                                attribution: '&copy; OpenStreetMap contributors'
-                            }).addTo(map);
-
-                            L.marker([<?php echo $lat; ?>, <?php echo $lng; ?>])
-                                .addTo(map)
-                                .bindPopup("Property Location")
-                                .openPopup();
-
-                        });
-                        </script>
-
+                    <?php 
+                        $map = get_field('map');
+                        if( !empty( $map ) ): ?>
+                            <img src="<?php echo esc_url($map['url']); ?>" alt="<?php echo esc_attr($map['alt']); ?>" />
                         <?php endif; ?>
                     </div>
                 </div>
@@ -158,8 +146,9 @@
     </div>
 </section>
 
-    <?php get_template_part('components/contact/template'); ?>
-
+         <?php get_template_part('components/our-teams/template'); ?>
+         <?php get_template_part('components/reviews/template'); ?>
+         <?php get_template_part('components/faqs/template'); ?>
 <?php endwhile; endif; ?>
 
 <?php get_footer(); ?>

@@ -13,6 +13,8 @@
     .footer__data {
         grid-template-columns: max-content;
     }
+
+   
 }
 
 /* For medium devices */
@@ -31,7 +33,8 @@
     .section {
         padding: 6rem 0 2rem;
     }
-
+    
+    
     .hero__card {
         flex-direction: row;
     }
@@ -72,6 +75,11 @@
 
     .offer__content-cards{
         grid-template-columns: 1fr 1.8fr;
+    }
+
+    .offer__left{
+        display: grid;
+        align-items: center;
     }
 
 }

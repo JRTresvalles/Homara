@@ -22,7 +22,7 @@ if ( ! empty( $is_preview ) ) : ?>
 endif;
 ?>
 
-<section class="<?php echo esc_attr($block_name); ?> section">
+<section class="<?php echo esc_attr($block_name); ?> section" id="feature">
     <div class="<?php echo esc_attr($block_name . '__container'); ?> container grid">
 
         <div class="section__header">

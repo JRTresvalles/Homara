@@ -27,30 +27,51 @@ endif;
 ?>
 
 
-<section class="<?php echo esc_attr($block_name); ?> section">
+<section class="<?php echo esc_attr($block_name); ?> section" id="offer">
     <div class="<?php echo esc_attr($block_name . '__container'); ?> container grid">
 
 		<div class="section__header">
 
 			<div class="section__round-pill">
-					<span>What We Offer</span>
+				<span>What We Offer</span>
 			</div>
 
 			<h2 class="section__title section__title-left">
 				Comprehensive Real Estate Solutions
 			</h2>
 			<p class="section__subtitle section__subtitle-left">
-				Our comprehensive services encompass luxury property sales, sustainable green building investments, and premium vacation rentals.
+				From luxury residences to smart investments, we offer end-to-end services tailored to your goals.
 			</p>
 		</div>
 
 
 		<div class="offer__content-cards grid">
-			<div class="offer__left">
-					<div class="offer__card-data" id="offerText">
+			<div class="offer__left grid">
+					<div class="offer__card-data">
 						<h3 class="offer__title">Luxury Residences</h3>
 						<p class="offer__description">
-							Exclusive listings of high-end homes with personalized buying and selling services.
+							Curated high-end homes with dedicated buying and selling support.
+						</p>
+					</div>
+
+					<div class="offer__card-data">
+						<h3 class="offer__title">Sustainable Living</h3>
+						<p class="offer__description">
+							Eco-conscious properties built for modern, responsible living.
+						</p>
+					</div>
+
+					<div class="offer__card-data">
+						<h3 class="offer__title">Vacation Rentals</h3>
+						<p class="offer__description">
+							Premium short-term stays in prime destinations worldwide.
+						</p>
+					</div>
+
+					<div class="offer__card-data">
+						<h3 class="offer__title">Investment Properties</h3>
+						<p class="offer__description">
+							High-potential real estate opportunities designed for long-term growth.
 						</p>
 					</div>
 			</div>
@@ -114,8 +135,8 @@ endif;
 								</div>
 									<div class="offer__card">
 
-										<h3 class="offer__number">01</h3>
-										<h5 class="offer__title">Luxury Residences</h5>
+										<h3 class="offer__number">02</h3>
+										<h5 class="offer__title">Eco Green Buildings</h5>
 
 									</div>
 							</div>
@@ -147,8 +168,8 @@ endif;
 								</div>
 									<div class="offer__card">
 
-										<h3 class="offer__number">01</h3>
-										<h5 class="offer__title">Luxury Residences</h5>
+										<h3 class="offer__number">03</h3>
+										<h5 class="offer__title">Unique Vacation Homes</h5>
 
 									</div>
 							</div>
@@ -180,8 +201,8 @@ endif;
 								</div>
 									<div class="offer__card">
 
-										<h3 class="offer__number">01</h3>
-										<h5 class="offer__title">Luxury Residences</h5>
+										<h3 class="offer__number">04</h3>
+										<h5 class="offer__title">Investment Properties</h5>
 
 									</div>
 							</div>

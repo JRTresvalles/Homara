@@ -28,7 +28,7 @@ endif;
 ?>
 
 
-<section class="<?php echo esc_attr($block_name); ?> section">
+<section class="<?php echo esc_attr($block_name); ?> section" id="our-teams">
     <div class="<?php echo esc_attr($block_name . '__container'); ?> grid">
 			<div class="section__header">
 
