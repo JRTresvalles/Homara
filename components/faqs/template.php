@@ -56,14 +56,14 @@ endif;
 
 							<div class="questions__content">
 								<p class="questions__description">
-									I specialize in web design, branding, UI/UX, and Framer & Wordpress development, creating modern, user-friendly experiences tailored to your needs
+									We provide property sales, home buying assistance, investment advisory, property management, leasing services, and market valuation.
 								</p>
 							</div>
 						</div>
 						<div class="questions__item">
 							<div class="questions__header">
 								<h3 class="questions__item-title">
-									What services do you offer?
+									How do I start buying a property?
 								</h3>
 
 								<svg class="questions__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="currentColor"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path></svg>
@@ -71,14 +71,14 @@ endif;
 
 							<div class="questions__content">
 								<p class="questions__description">
-									I specialize in web design, branding, UI/UX, and Framer & Wordpress development, creating modern, user-friendly experiences tailored to your needs
+									Simply contact our team and we’ll guide you through listings, viewings, financing options, and closing.
 								</p>
 							</div>
 						</div>
 						<div class="questions__item">
 							<div class="questions__header">
 								<h3 class="questions__item-title">
-									What services do you offer?
+									Can you help me sell my property?
 								</h3>
 
 								<svg class="questions__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="currentColor"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path></svg>
@@ -86,14 +86,14 @@ endif;
 
 							<div class="questions__content">
 								<p class="questions__description">
-									I specialize in web design, branding, UI/UX, and Framer & Wordpress development, creating modern, user-friendly experiences tailored to your needs
+									Yes, we handle marketing, pricing strategy, negotiations, and the full sales process to secure the best value.
 								</p>
 							</div>
 						</div>
 						<div class="questions__item">
 							<div class="questions__header">
 								<h3 class="questions__item-title">
-									What services do you offer?
+									Do you work with real estate investors?
 								</h3>
 
 								<svg class="questions__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="currentColor"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path></svg>
@@ -101,14 +101,14 @@ endif;
 
 							<div class="questions__content">
 								<p class="questions__description">
-									I specialize in web design, branding, UI/UX, and Framer & Wordpress development, creating modern, user-friendly experiences tailored to your needs
+									Absolutely. We help identify high-potential properties and provide insights to maximize returns.
 								</p>
 							</div>
 						</div>
 						<div class="questions__item">
 							<div class="questions__header">
 								<h3 class="questions__item-title">
-									What services do you offer?
+									What areas do you cover?
 								</h3>
 
 								<svg class="questions__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="currentColor"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path></svg>
@@ -116,14 +116,13 @@ endif;
 
 							<div class="questions__content">
 								<p class="questions__description">
-									I specialize in web design, branding, UI/UX, and Framer & Wordpress development, creating modern, user-friendly experiences tailored to your needs
-								</p>
+									We operate across key residential and investment markets, including luxury and emerging locations.
 							</div>
 						</div>
 						<div class="questions__item">
 							<div class="questions__header">
 								<h3 class="questions__item-title">
-									What services do you offer?
+									How do I schedule a consultation?
 								</h3>
 
 								<svg class="questions__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="currentColor"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path></svg>
@@ -131,7 +130,7 @@ endif;
 
 							<div class="questions__content">
 								<p class="questions__description">
-									I specialize in web design, branding, UI/UX, and Framer & Wordpress development, creating modern, user-friendly experiences tailored to your needs
+									You can reach out through our contact form or directly via email or phone to book an appointment.
 								</p>
 							</div>
 						</div>

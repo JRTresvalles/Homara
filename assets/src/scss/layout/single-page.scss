@@ -2,9 +2,6 @@
     padding: 8rem 0 4rem;
 }
 
-.property__row {
-    grid-template-columns: 1.8fr 1fr;
-}
 
 .property__column {
     gap: 1rem;
@@ -32,7 +29,6 @@
 }
 
 .property__content-container {
-    grid-template-columns: 1.9fr 1fr;
     margin-top: 2rem;
 }
 
@@ -98,6 +94,11 @@
     text-align: center;
 }
 
+.property__sticky p{
+    font-size: var(--normal-font-size);
+    text-align: center;
+}
+
 .property__agents{
     display: flex;
     justify-content: center;
@@ -115,7 +116,12 @@
 .property__contact{
     display: block;
     text-align: center;
-    margin-top: 1rem;
+    margin: 1.5rem 0;
+}
+
+.property__sticky a.nav__cta{
+    width: max-content;
+    margin: 0 auto;
 }
 
 .property__contact span{

@@ -36,11 +36,19 @@ endif;
 				</div>
 
 				<h2 class="section__title section__title-left">
-					Trusted by Many, Loved by All
+					Trusted by Many, Valued by Every Client
 				</h2>
 				<p class="section__subtitle section__subtitle-left">
-					Our clients’ success stories reflect our commitment to excellence. See how we’ve helped them find their dream homes, sustainable investments, and perfect getaways.
+					Real experiences from clients who found the right homes, smart investments, and seamless property journeys with us.
 				</p>
+
+				<a href="/contact" class="nav__cta">
+                  <span class="nav__dot"></span>
+                        Contact Us Now
+                    <span class="nav__arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(0, 0, 0);transform: ;msFilter:;"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
+                    </span>
+            	</a>
 			</div>
 		</div>
 
@@ -50,7 +58,7 @@ endif;
 				<div class="reviews__card-data">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/black__star.png">
 					<p class="reviews__review">
-						“Homara made our home buying experience seamless and enjoyable. Their team was knowledgeable, responsive, and truly cared about finding us the perfect home.”
+						“From the first viewing to closing, everything was handled with care and professionalism. We couldn’t be happier with our new home.”
 					</p>
 				</div>
 				<div class="reviews__card-image">
@@ -71,7 +79,7 @@ endif;
 				<div class="reviews__card-data">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/black__star.png">
 					<p class="reviews__review">
-						“Homara made our home buying experience seamless and enjoyable. Their team was knowledgeable, responsive, and truly cared about finding us the perfect home.”
+						“The team understood exactly what we were looking for and delivered beyond expectations. The entire process felt smooth and stress-free.”
 					</p>
 				</div>
 				<div class="reviews__card-image">
@@ -80,9 +88,9 @@ endif;
 						class="reviews__image">
 
 						<div class="reviews__client-info">
-							<h3 class="reviews__name">Emily R.</h3>
+							<h3 class="reviews__name">Daniel M.</h3>
 							<span class="reviews__work">
-								Homeowner
+								Property Investor
 							</span>
 						</div>
 				</div>
@@ -91,7 +99,7 @@ endif;
 				<div class="reviews__card-data">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/black__star.png">
 					<p class="reviews__review">
-						“Homara made our home buying experience seamless and enjoyable. Their team was knowledgeable, responsive, and truly cared about finding us the perfect home.”
+						“They made selling our property incredibly efficient. We received strong offers quickly and felt supported at every step.”
 					</p>
 				</div>
 				<div class="reviews__card-image">
@@ -100,9 +108,9 @@ endif;
 						class="reviews__image">
 
 						<div class="reviews__client-info">
-							<h3 class="reviews__name">Emily R.</h3>
+							<h3 class="reviews__name">Sophia L.</h3>
 							<span class="reviews__work">
-								Homeowner
+								Seller
 							</span>
 						</div>
 				</div>
@@ -112,7 +120,7 @@ endif;
 				<div class="reviews__card-data">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/black__star.png">
 					<p class="reviews__review">
-						“Homara made our home buying experience seamless and enjoyable. Their team was knowledgeable, responsive, and truly cared about finding us the perfect home.”
+						“Finding a vacation home felt overwhelming at first, but they guided us through every detail and made it simple.”
 					</p>
 				</div>
 				<div class="reviews__card-image">
@@ -121,9 +129,9 @@ endif;
 						class="reviews__image">
 
 						<div class="reviews__client-info">
-							<h3 class="reviews__name">Emily R.</h3>
+							<h3 class="reviews__name">James T.</h3>
 							<span class="reviews__work">
-								Homeowner
+								Vacation Home Buyer
 							</span>
 						</div>
 				</div>
@@ -133,7 +141,7 @@ endif;
 				<div class="reviews__card-data">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/black__star.png">
 					<p class="reviews__review">
-						“Homara made our home buying experience seamless and enjoyable. Their team was knowledgeable, responsive, and truly cared about finding us the perfect home.”
+						“Their market knowledge and attention to detail gave us complete confidence in our investment decisions.”
 					</p>
 				</div>
 				<div class="reviews__card-image">
@@ -142,9 +150,9 @@ endif;
 						class="reviews__image">
 
 						<div class="reviews__client-info">
-							<h3 class="reviews__name">Emily R.</h3>
+							<h3 class="reviews__name">Michael D.</h3>
 							<span class="reviews__work">
-								Homeowner
+								Real Estate Investor
 							</span>
 						</div>
 				</div>
@@ -154,7 +162,7 @@ endif;
 				<div class="reviews__card-data">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/black__star.png">
 					<p class="reviews__review">
-						“Homara made our home buying experience seamless and enjoyable. Their team was knowledgeable, responsive, and truly cared about finding us the perfect home.”
+						“Professional, responsive, and genuinely invested in our goals. It was a great experience from start to finish.”
 					</p>
 				</div>
 				<div class="reviews__card-image">
@@ -163,9 +171,9 @@ endif;
 						class="reviews__image">
 
 						<div class="reviews__client-info">
-							<h3 class="reviews__name">Emily R.</h3>
+							<h3 class="reviews__name">Olivia K.</h3>
 							<span class="reviews__work">
-								Homeowner
+								First-time Buyer
 							</span>
 						</div>
 				</div>

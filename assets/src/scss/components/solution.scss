@@ -2,6 +2,11 @@
     margin: 0;
 }
 
+
+.solution__data-right .section__subtitle {
+    margin-bottom: var(--mb-2);
+}
+
 .solution__data-numbers {
     grid-template-columns: 1fr 1fr;
     margin-top: var(--mb-2);
