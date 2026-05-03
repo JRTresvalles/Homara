@@ -26,7 +26,10 @@ function styles() {
 function scripts() {
     return src(paths.js)
         .pipe(concat('main.min.js'))
-        .pipe(uglify())
+        .pipe(uglify().on('error', function (err) {
+            console.error('JS Minify Error:', err.toString());
+            this.emit('end');
+        }))
         .pipe(dest(paths.jsOutput));
 }
 

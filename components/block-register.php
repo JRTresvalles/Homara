@@ -69,9 +69,9 @@ function homara_register_acf_block( $args, $path ) {
 function homara_register_all_blocks() {
 
     if ( ! function_exists( 'acf_register_block_type' ) ) {
-        if ( defined('WP_DEBUG') && WP_DEBUG ) {
-            error_log('ACF block system not available (acf_register_block_type missing)');
-        }
+        // if ( defined('WP_DEBUG') && WP_DEBUG ) {
+        //     error_log('ACF block system not available (acf_register_block_type missing)');
+        // }
         return;
     }
 
@@ -112,9 +112,9 @@ function homara_register_all_blocks() {
             continue;
         }
 
-        if ( defined('WP_DEBUG') && WP_DEBUG ) {
-            error_log("Registering block: {$component}");
-        }
+        // if ( defined('WP_DEBUG') && WP_DEBUG ) {
+        //     error_log("Registering block: {$component}");
+        // }
 
         homara_register_acf_block( $args, $path );
     }
