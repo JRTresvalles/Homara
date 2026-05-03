@@ -52,15 +52,32 @@ function homara_enqueue_assets() {
         file_exists($css_file) ? filemtime($css_file) : null
     );
 
-    // Main JS
+
+     // Main JS
     $js_file = HMR_THEME_DIR . '/assets/js/main.min.js';
     wp_enqueue_script(
         'jt-main-script',
         HMR_THEME_URI . '/assets/js/main.min.js',
-        [],
+        ['leaflet-js'], 
         file_exists($js_file) ? filemtime($js_file) : null,
         true
     );
+
+    wp_enqueue_style(
+        'leaflet-css',
+        'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
+        [],
+        null
+    );
+
+    wp_enqueue_script(
+        'leaflet-js',
+        'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js',
+        [],
+        null,
+        true
+    );
+   
 }
 add_action('wp_enqueue_scripts', 'homara_enqueue_assets');
 
@@ -78,6 +95,40 @@ function homara_register_menus() {
     ]);
 }
 add_action('after_setup_theme', 'homara_register_menus');   
+
+ /* =========================
+   Custom Post Type: Property
+========================= */
+
+function homara_register_property_cpt() {
+
+    $labels = [
+        'name'               => 'Properties',
+        'singular_name'      => 'Property',
+        'menu_name'          => 'Properties',
+        'add_new'            => 'Add New Property',
+        'add_new_item'       => 'Add New Property',
+        'edit_item'          => 'Edit Property',
+        'new_item'           => 'New Property',
+        'view_item'          => 'View Property',
+        'search_items'       => 'Search Properties',
+        'not_found'          => 'No properties found',
+        'not_found_in_trash' => 'No properties found in Trash',
+    ];
+
+    $args = [
+        'labels'       => $labels,
+        'public'       => true,
+        'has_archive'  => true,
+        'rewrite'      => ['slug' => 'properties'],
+        'menu_icon'    => 'dashicons-building',
+        'supports'     => ['title', 'editor', 'thumbnail', 'excerpt'],
+        'show_in_rest' => true,
+    ];
+
+    register_post_type('property', $args);
+}
+add_action('init', 'homara_register_property_cpt');
 
 
 /* =========================
