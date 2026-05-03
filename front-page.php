@@ -35,7 +35,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                             </div>
 
                             <h2 class="section__title section__title-left">
-                                Discover homes tailored to your <br> lifestyle and needs
+                               Homes designed for your<br>lifestyle and needs
                             </h2>
                         </div>
 

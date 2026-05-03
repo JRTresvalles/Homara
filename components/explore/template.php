@@ -36,7 +36,7 @@ endif;
 				</div>
 
 				<h2 class="section__title ">
-					Explore our range of expert real estate services
+					Discover Our Tailored Real Estate Services
 				</h2>
 			</div>
 
@@ -53,7 +53,7 @@ endif;
 						<div class="explore__card-data">
 							<h3 class="explore__title">Property Sales</h3>
 							<p class="explore__description">
-								Expertly promoting and selling your property to attract qualified buyers.
+								Strategic marketing and expert negotiation to secure the best value for your property.
 							</p>
 						</div>
 
@@ -69,9 +69,9 @@ endif;
 							</div>
 
 							<div class="explore__card-data">
-							<h3 class="explore__title">Property Sales</h3>
+							<h3 class="explore__title">Home Buying Assistance</h3>
 							<p class="explore__description">
-								Expertly promoting and selling your property to attract qualified buyers.
+								Personalized guidance to help you find and secure the right home at the right price.
 							</p>
 						
 						</div>
@@ -87,9 +87,9 @@ endif;
 						</div>
 
 						<div class="explore__card-data">
-						<h3 class="explore__title">Property Sales</h3>
+						<h3 class="explore__title">Investment Advisory</h3>
 						<p class="explore__description">
-							Expertly promoting and selling your property to attract qualified buyers.
+							Data-driven insights to identify high-potential properties and maximize your returns.
 						</p>
 						
 						</div>
@@ -104,9 +104,9 @@ endif;
 						</div>
 
 						<div class="explore__card-data">
-						<h3 class="explore__title">Property Sales</h3>
+						<h3 class="explore__title">Property Management</h3>
 						<p class="explore__description">
-							Expertly promoting and selling your property to attract qualified buyers.
+							End-to-end management services that protect your asset and keep it performing.
 						</p>
 						
 						</div>
@@ -121,9 +121,9 @@ endif;
 						</div>
 
 						<div class="explore__card-data">
-						<h3 class="explore__title">Property Sales</h3>
+						<h3 class="explore__title">Leasing Services</h3>
 						<p class="explore__description">
-							Expertly promoting and selling your property to attract qualified buyers.
+							Connecting landlords with qualified tenants through targeted marketing and screening.
 						</p>
 					
 						</div>
@@ -138,9 +138,9 @@ endif;
 						</div>
 
 						<div class="explore__card-data">
-						<h3 class="explore__title">Property Sales</h3>
+						<h3 class="explore__title">Market Valuation</h3>
 						<p class="explore__description">
-							Expertly promoting and selling your property to attract qualified buyers.
+							Accurate property assessments backed by local market expertise and real-time data.
 						</p>
 					
 						</div>

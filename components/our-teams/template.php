@@ -37,7 +37,7 @@ endif;
 				</div>
 
 				<h2 class="section__title ">
-					Explore our range of expert real estate services
+					Your trusted partner for real estate services
 				</h2>
 			</div>
 

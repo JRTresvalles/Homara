@@ -37,11 +37,19 @@ endif;
 			</div>
 
 			<h2 class="section__title section__title-left">
-				Redefining Excellence in Real Estate
+				Elevating Standards in Real Estate
 			</h2>
 			<p class="section__subtitle section__subtitle-left">
-				We specialize in luxury properties, sustainable homes, and vacation rentals — driven by a passion for exceptional living and a commitment to quality, innovation, and client satisfaction.
+				We focus on luxury residences, sustainable living, and premium vacation homes, guided by a commitment to quality, innovation, and exceptional client experiences.
 			</p>
+
+			<a href="/contact" class="nav__cta">
+                  <span class="nav__dot"></span>
+                        Contact Us Now
+                    <span class="nav__arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(0, 0, 0);transform: ;msFilter:;"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
+                    </span>
+            </a>
 		</div>
 
 		<div class="solution__data-numbers grid">
@@ -51,7 +59,7 @@ endif;
 			</div>
 			<div class="solution__data-number">
 				<h4>70+</h4>
-				<p>Happy Clients</p>
+				<p>Satisfied Clients</p>
 			</div>
 			<div class="solution__data-number">
 				<h4>10M+</h4>
@@ -82,7 +90,7 @@ endif;
 						<div class="explore__card-data">
 							<h3 class="explore__title">Property Sales</h3>
 							<p class="explore__description">
-								Expertly promoting and selling your property to attract qualified buyers.
+								Strategic marketing and expert negotiation to connect your property with the right buyers.
 							</p>
 						</div>
 
@@ -97,9 +105,9 @@ endif;
 							</div>
 
 							<div class="explore__card-data">
-							<h3 class="explore__title">Property Sales</h3>
+							<h3 class="explore__title">Home Buying</h3>
 							<p class="explore__description">
-								Expertly promoting and selling your property to attract qualified buyers.
+								Guided support to help you find and secure a home that fits your goals and lifestyle.
 							</p>
 						
 						</div>
