@@ -37,10 +37,10 @@ endif;
 			</div>
 
 			<h2 class="section__title section__title-left">
-				Comprehensive Real Estate Solutions
+				Luxury Real Estate & Investment Expertise
 			</h2>
 			<p class="section__subtitle section__subtitle-left">
-				From luxury residences to smart investments, we offer end-to-end services tailored to your goals.
+				From premium residences to high-value property investments, we create seamless real estate experiences tailored to you.
 			</p>
 		</div>
 

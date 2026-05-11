@@ -11,7 +11,7 @@
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 $block_name = 'hero';
-$title = get_field('title') ? get_field('title') : 'FIND YOUR PERFECT<br>HOME TODAY';
+$title = get_field('title') ? get_field('title') : 'EXPLORE HOMES DESIGNED <br>FOR YOUR LIFESTYLE';
 $description = get_field('description') ? get_field('description') : 'Discover properties that match your lifestyle. We guide you every step of the way with personalized support and expert insight.';
 $button = get_field('button');
 $image = get_field('image');
